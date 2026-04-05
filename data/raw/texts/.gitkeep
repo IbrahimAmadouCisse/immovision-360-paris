@@ -1,0 +1,2 @@
+# Ce fichier permet de conserver le dossier texts/ dans Git
+# Les fichiers .txt sont exclus via .gitignore

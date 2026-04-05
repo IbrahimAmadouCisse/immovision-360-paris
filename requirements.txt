@@ -1,0 +1,26 @@
+# ================================================
+# ImmoVision360 DataLake - Dependances Python
+# ================================================
+
+# --- Data Processing ---
+pandas>=2.0.0
+numpy>=1.24.0
+
+# --- Database ---
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.0
+
+# --- API & Web ---
+requests>=2.31.0
+Pillow>=10.0.0
+
+# --- AI / NLP (optionnel - pour mode production) ---
+google-generativeai>=0.3.0
+
+# --- Environment ---
+python-dotenv>=1.0.0
+
+# --- Testing & Quality (optionnel) ---
+# pytest>=7.4.0
+# black>=23.0.0
+# flake8>=6.0.0

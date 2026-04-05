@@ -1,0 +1,67 @@
+# ================================================
+# ImmoVision360 DataLake - Git Ignore
+# ================================================
+
+# --- Fichiers de donnees volumineuses ---
+data/raw/tabular/*.csv
+data/raw/texts/*.txt
+data/raw/images/*.jpg
+data/processed/*.csv
+
+# Garder la structure des dossiers
+!data/raw/tabular/.gitkeep
+!data/raw/texts/.gitkeep
+!data/raw/images/.gitkeep
+!data/processed/.gitkeep
+
+# --- Variables d'environnement ---
+.env
+.env.local
+
+# --- Fichiers de preparation/temporaires (non necessaires sur GitHub) ---
+ACTION_REQUISE_SCREENSHOTS.md
+CHECKLIST_GITHUB.md
+RESUME_TRAVAIL.md
+PRET_POUR_GITHUB.md
+COMMANDES_GITHUB.md
+
+# --- Environnements virtuels Python ---
+myenv/
+venv/
+env/
+.venv/
+ENV/
+
+# --- Cache Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# --- IDEs ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Fichiers temporaires ---
+*.tmp
+*.temp
+.cache/
+
+# --- Distribution / Packaging ---
+build/
+dist/
+*.egg-info/
+.eggs/

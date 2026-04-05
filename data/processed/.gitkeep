@@ -1,0 +1,2 @@
+# Ce fichier permet de conserver le dossier processed/ dans Git
+# Les fichiers CSV sont exclus via .gitignore

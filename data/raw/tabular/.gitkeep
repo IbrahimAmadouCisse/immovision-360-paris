@@ -1,0 +1,2 @@
+# Ce fichier permet de conserver le dossier tabular/ dans Git
+# Les fichiers CSV volumineux sont exclus via .gitignore
