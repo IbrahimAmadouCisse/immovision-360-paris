@@ -167,8 +167,46 @@ Les colonnes passeront alors de valeurs aleatoires a de vraies classifications I
 - [README_EXTRACT.md](README_EXTRACT.md) - Étape d'extraction (filtrage Élysée)
 - [README_TRANSFORM.md](README_TRANSFORM.md) - Étape de transformation (nettoyage + IA)
 - [README_LOAD.md](README_LOAD.md) - Étape de chargement PostgreSQL
+- [README_DATAPROFILING.md](README_DATAPROFILING.md) - Analyse exploratoire (EDA)
 - [PIPELINE_COMPLET.md](PIPELINE_COMPLET.md) - Vue d'ensemble complète du pipeline ETL
 
 **Guides pratiques** :
 - [docs/GUIDE_SCREENSHOTS.md](docs/GUIDE_SCREENSHOTS.md) - Guide pour reproduire les screenshots
 - [docs/REQUETES_SQL_SCREENSHOTS.md](docs/REQUETES_SQL_SCREENSHOTS.md) - Requêtes SQL de validation
+
+---
+
+## 📊 Analyse Exploratoire (EDA) — Phase 3
+
+Le notebook **[EDA.ipynb](EDA.ipynb)** contient l'analyse exploratoire complète :
+- **Bloc A** : Feuille de route (5 questions → variables → graphiques)
+- **Bloc B** : Analyse univariée de chaque variable
+- **Bloc C** : Croisements entre variables (scatter, boxplots, heatmap, tests statistiques)
+- **Bloc D** : Analyses avancées (ACP, matrice de corrélation, K-Means)
+
+### Exécution du notebook
+
+```bash
+pip install matplotlib seaborn scipy scikit-learn
+jupyter notebook EDA.ipynb
+```
+
+---
+
+## 📄 Rapport Final pour la Mairie
+
+Le rapport de synthèse est disponible dans **[rapport_final_Mairie.pdf](rapport_final_Mairie.pdf)** (3-10 pages).
+
+### Contenu du rapport
+1. Rappel du problème et des hypothèses
+2. Données et chaîne de traitement (ETL)
+3. Résultats clés de l'EDA (avec graphiques)
+4. Limites de l'étude
+5. Conclusion et recommandations
+
+### Génération automatique du rapport
+
+```bash
+pip install fpdf2
+python 07_generate_report.py
+```
